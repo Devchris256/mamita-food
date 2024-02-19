@@ -1,6 +1,8 @@
 @import "./header.css";
 @import "./hero.css";
 @import "./fut-food.css";
+@import "./food.css";
+@import "./list.css";
 
 :root {
   font-size: 16px;
@@ -58,7 +60,6 @@ h4 {
   max-inline-size: 75rem;
   margin: auto;
   padding-inline: 1rem;
-  box-sizing: border-box;
 }
 
 @media screen and (min-width: 1500px) {

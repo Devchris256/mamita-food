@@ -1,0 +1,75 @@
+.food {
+  margin-block-end: 2rem;
+  min-inline-size: 18rem;
+}
+
+.food:hover .food-actionsList {
+  opacity: 1;
+}
+
+.food-plate {
+  background: var(--secondary);
+  margin-block-end: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.food-actionsList {
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  transition: opacity 0.3s;
+}
+
+.food-action {
+  inline-size: 3.5rem;
+  block-size: 3.5rem;
+  border-radius: 50%;
+  border: none;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.food-icon[src$="-white.svg"] {
+  display: none;
+}
+
+.food-action:hover {
+  background: var(--coral);
+}
+
+.food-action:hover .food-icon:first-of-type {
+  display: none;
+}
+
+.food-action:hover .food-icon[src$="-white.svg"] {
+  display: block;
+}
+
+.food-title {
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.food-price {
+  color: var(--coral);
+  font-weight: 900;
+  text-align: center;
+}
+
+@media screen and (min-width: 630px) {
+  .food {
+    margin: 0;
+  }
+}

@@ -56,9 +56,14 @@
     color: var(--black);
     font-size: 1rem;
     font-family: var(--fontFamily);
+    transition: color 0.3s;
   }
 
   .header-link[aria-current="page"] {
+    color: var(--coral);
+  }
+
+  .header-link:hover {
     color: var(--coral);
   }
 }
