@@ -1,0 +1,43 @@
+@import "./header.css";
+
+:root {
+  font-size: 16px;
+  --fontFamily: "Inter", sans-serif;
+  --titleOne: 400 2.5rem/1.2 var(--fontFamily);
+  --titleTwo: 400 2rem/1.2 var(--fontFamily);
+  --titleThree: 400 1.75rem/1.2 var(--fontFamily);
+  --titleFour: 400 1.5rem/1.2 var(--fontFamily);
+  --baseFont: 400 1rem/1.2 var(--fontFamily);
+  --button: 900 1.25rem/1.2 var(--fontFamily);
+  --primary: #f5f5f5;
+  --secondary: #f0f0f0;
+  --coral: #ee7665;
+  --gray: #494949;
+  --heroColor: #e9e5e2;
+  --white: #fffffe;
+}
+
+/* GLOBALES */
+
+body {
+  margin: 0;
+  font: var(--baseFont);
+  color: var(--gray);
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-inline-size: 75rem;
+  margin: auto;
+  padding-inline: 1rem;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 1500px) {
+  .wrapper {
+    max-inline-size: 85.375rem;
+  }
+}
