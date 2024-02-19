@@ -1,0 +1,48 @@
+.futFood {
+  padding-block: 1.5rem;
+  background: var(--secondary);
+}
+
+.futFood-title {
+  text-transform: uppercase;
+  border-inline-start: 4px solid var(--coral);
+  padding-block: 0.5rem;
+  padding-inline-start: 0.5rem;
+}
+
+.futFood-dish {
+  text-align: center;
+}
+
+.futFood-button {
+  inline-size: 100%;
+}
+
+@media screen and (min-width: 425px) {
+  .futFood-dishes {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .futFood-details {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .futFood-button {
+    inline-size: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .futFood-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
