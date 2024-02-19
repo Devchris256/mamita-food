@@ -1,4 +1,5 @@
 @import "./header.css";
+@import "./hero.css";
 
 :root {
   font-size: 16px;
@@ -7,11 +8,11 @@
   --titleTwo: 400 2rem/1.2 var(--fontFamily);
   --titleThree: 400 1.75rem/1.2 var(--fontFamily);
   --titleFour: 400 1.5rem/1.2 var(--fontFamily);
-  --baseFont: 400 1rem/1.2 var(--fontFamily);
-  --button: 900 1.25rem/1.2 var(--fontFamily);
+  --baseFont: 400 1rem/1 var(--fontFamily);
+  --button: 900 1rem/1.2 var(--fontFamily);
   --primary: #f5f5f5;
   --secondary: #f0f0f0;
-  --coral: #ee7665;
+  --coral: #e5442d;
   --gray: #494949;
   --heroColor: #e9e5e2;
   --white: #fffffe;
@@ -29,6 +30,29 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font: var(--titleOne);
+}
+
+h2 {
+  font: var(--titleTwo);
+}
+
+h3 {
+  font: var(--titleThree);
+}
+
+h4 {
+  font: var(--titleFour);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
 .wrapper {
   max-inline-size: 75rem;
   margin: auto;
@@ -40,4 +64,20 @@ a {
   .wrapper {
     max-inline-size: 85.375rem;
   }
+}
+
+.button {
+  background: var(--coral);
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: center;
+  font: var(--button);
+  border: none;
+  padding-block: 0.875rem;
+  cursor: pointer;
+  transition: scale 0.3s;
+}
+
+.button:hover {
+  scale: 0.9;
 }

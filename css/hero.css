@@ -1,0 +1,41 @@
+.hero {
+  background: var(--heroColor);
+  padding-block: 1.5rem;
+}
+
+.hero-details {
+  text-align: center;
+  color: var(--black);
+  margin-block-end: 1rem;
+}
+
+.hero-title {
+  margin-block-end: 2.5rem;
+}
+
+.hero-button {
+  padding-inline: 2.5rem;
+}
+
+.hero-img {
+  display: block;
+  inline-size: 100%;
+  max-inline-size: 29.25rem;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    gap: 2rem;
+    max-inline-size: 62.25rem;
+    margin: auto;
+  }
+
+  .hero-details {
+    align-self: center;
+    text-align: left;
+  }
+}

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mamita</title>
+  <title>Mamita - Home</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet" />
@@ -30,9 +30,25 @@
           <img class="header-iconShopping" width="24" height="24" src="./img/icon-shoping.svg" alt="Icono de una una bolsa de compra" aria-label="Registro de compras" />
           <img class="header-iconMenu" width="24" height="35" src="./img/icon-menu.svg" alt="Icono de hamburguesa(menu de opciones)" aria-label="Menu de opciones para el usuario" />
         </div>
-      </div>
-    </div>
+      </div> <!-- header-content -->
+    </div> <!-- wrapper -->
   </header>
+  <div class="hero">
+    <div class="wrapper">
+      <div class="hero-content">
+        <div class="hero-details">
+          <p class="hero-slogan">Un fin de semana con sabor a casa con nuestros platos</p>
+          <h1 class="hero-title">RICOS & SALUDABLES</h1>
+          <button class="button hero-button">comprar ahora</button>
+        </div> <!-- details -->
+        <picture>
+          <source srcset="./img/hero-img.avif" type="image/avif">
+          <source srcset="./img/hero-img.webp" type="image/webp">
+          <img class="hero-img" loading="lazy" src="./img/hero-img.png" width="288" height="287" alt="Plato de la casa (Ensalada de pollo romano)">
+        </picture> <!-- hero img -->
+      </div> <!-- hero-content -->
+    </div> <!-- wrraper -->
+  </div> <!-- hero -->
 </body>
 
 </html>
