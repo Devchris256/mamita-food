@@ -5,6 +5,7 @@
 @import "./food.css";
 @import "./job.css";
 @import "./event-list.css";
+@import "./footer.css";
 
 :root {
   font-size: 16px;
