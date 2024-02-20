@@ -1,0 +1,56 @@
+.notavif.norwebp .job {
+  background: url(../img/backgrouns-job.png) no-repeat center/cover;
+}
+
+.avif .job {
+  background: url(../img/backgrouns-job.png) no-repeat center/cover;
+}
+
+.webp .job {
+  background: url(../img/backgrouns-job.png) no-repeat center/cover;
+}
+
+.job {
+  padding-block: 3rem;
+}
+
+.job-content {
+  background: var(--white);
+  text-align: center;
+  padding-block: 1.5rem;
+}
+
+.job-title {
+  text-transform: uppercase;
+  margin-block: 2rem;
+}
+
+.job-text {
+  margin-block-end: 2rem;
+}
+
+.job-button {
+  inline-size: 100%;
+}
+
+@media screen and (min-width: 400px) {
+  .job-content {
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .job-text {
+    font-size: 1.75rem;
+  }
+
+  .job-button {
+    max-inline-size: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .job {
+    padding-block: 4rem;
+  }
+}

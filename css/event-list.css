@@ -1,0 +1,42 @@
+.eventList {
+  padding-block: 2rem;
+}
+
+.eventList-title {
+  text-transform: uppercase;
+  border-inline-start: 4px solid var(--coral);
+  padding-block: 0.5rem;
+  padding-inline-start: 0.5rem;
+  margin-block-end: 1.5rem;
+}
+
+.eventList-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.event-img {
+  inline-size: 100%;
+  block-size: auto;
+  object-fit: cover;
+  margin-block-end: 0.875rem;
+}
+
+.event-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 630px) {
+  .eventList-content {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .eventList-content > * {
+    min-inline-size: 220px;
+    flex: 1;
+  }
+}
