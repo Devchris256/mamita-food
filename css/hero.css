@@ -21,6 +21,7 @@
   display: block;
   inline-size: 100%;
   max-inline-size: 29.25rem;
+  block-size: auto;
   margin: auto;
 }
 
